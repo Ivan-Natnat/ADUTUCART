@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "800296234902",
+    "project_id": "adutucart-ffc52",
+    "storage_bucket": "adutucart-ffc52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800296234902:android:42a2b89b03caf0e266f7b7",
+        "android_client_info": {
+          "package_name": "com.example.adutucart5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800296234902-oma3a4v7td7olsj1ca8c1ihcuerfj7o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdQMFvCVli6q3JltL0ywkjG8PlFzre1NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800296234902-oma3a4v7td7olsj1ca8c1ihcuerfj7o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

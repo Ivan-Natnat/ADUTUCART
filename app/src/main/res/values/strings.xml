@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Adutucart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shop_cart">Shop Cart</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="smooth_bottom_bar">Smooth Bottom Bar</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="more_fragment">My Dashboard</string>
+</resources>
