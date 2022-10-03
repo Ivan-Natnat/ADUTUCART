@@ -8,6 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">#F84D17</color> //orange
-    <color name="colorSecondary">#CE8E4833</color> //dark_brown
+    <color name="colorPrimary">#ab521b</color> //orange
+    <color name="colorSecondary">#D06224</color> //dark_brown
 </resources>

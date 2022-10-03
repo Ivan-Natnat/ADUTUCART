@@ -8,4 +8,12 @@
     <string name="smooth_bottom_bar">Smooth Bottom Bar</string>
     <string name="cart_fragment">Cart Fragment</string>
     <string name="more_fragment">My Dashboard</string>
+    <string name="shop_by_category">Shop by Category</string>
+    <string name="see_all">See all</string>
+    <string name="shop_by_products">Shop by Products</string>
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="store">Store</string>
+    <string name="add_to_cart">Add to Cart</string>
 </resources>
