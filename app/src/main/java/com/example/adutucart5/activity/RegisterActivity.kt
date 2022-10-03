@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.adutucart5.databinding.ActivityRegisterBinding
+import com.example.adutucart5.model.UserModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -47,9 +48,9 @@ class RegisterActivity : AppCompatActivity() {
             .create()
         builder.show()
 
-        val data = hashMapOf<String, Any>()
-        data["name"] = binding.userName.text.toString()
-        data["number"] = binding.userNumber.text.toString()
+
+        val data = UserModel(userName = binding.userName.text.toString(),
+                            userPhoneNumber = binding.userNumber.text.toString())
 
         Firebase.firestore.collection("users").document(binding.userNumber.text.toString())
             .set(data).addOnSuccessListener {
