@@ -19,6 +19,7 @@ import com.example.adutucart5.roomdb.ProductModel
 class CartFragment : Fragment() {
 
     private lateinit var binding: FragmentCartBinding
+    private lateinit var list: ArrayList<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,9 +35,16 @@ class CartFragment : Fragment() {
 
         val dao = AppDatabase.getInstance(requireContext()).productDao()
 
+        list = ArrayList()
+
         dao.getAllProducts().observe(requireActivity()){
             binding.cartRecycler.adapter = CartAdapter(requireContext(), it)
 
+            list.clear()
+
+            for (data in it){
+                list.add(data.productId)
+            }
             totalCost(it)
         }
 
@@ -44,17 +52,21 @@ class CartFragment : Fragment() {
     }
 
     private fun totalCost(data: List<ProductModel>?) {
-        var total = 0
-        for(item in data!!){
-            total += item.productSp!!.toInt()
-        }
+        var total : Double = 0.00
+
+        for(item in data!!)
+            total += item.productSp!!.toDouble()
 
         binding.textView12.text = "Total item in cart is: ${data.size}"
         binding.textView13.text = "Total Cost: $total "
 
         binding.checkout.setOnClickListener{
             val intent = Intent (context, AddressActivity::class.java)
-            intent.putExtra("totalCost", total)
+            val b = Bundle()
+            b.putStringArrayList("productIds", list)
+            b.putString("totalCost", total.toString())
+
+            intent.putExtras(b)
             startActivity(intent)
         }
     }

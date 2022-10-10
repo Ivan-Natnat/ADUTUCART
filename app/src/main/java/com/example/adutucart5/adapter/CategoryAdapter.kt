@@ -13,14 +13,16 @@ import com.example.adutucart5.activity.CategoryActivity
 import com.example.adutucart5.databinding.LayoutCategoryItemBinding
 import com.example.adutucart5.model.CategoryModel
 
-class CategoryAdapter(var context: Context, val list: ArrayList<CategoryModel>) : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>(){
+class CategoryAdapter(var context: Context, val list: ArrayList<CategoryModel>) :
+    RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>(){
 
     inner class CategoryViewHolder(view: View) : RecyclerView.ViewHolder(view){
         var binding = LayoutCategoryItemBinding.bind(view)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
-        return CategoryViewHolder(LayoutInflater.from(context).inflate(R.layout.layout_category_item, parent,false))
+        return CategoryViewHolder(LayoutInflater.from(context)
+            .inflate(R.layout.layout_category_item, parent,false))
     }
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {

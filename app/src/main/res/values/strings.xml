@@ -16,4 +16,7 @@
     <string name="description">Description</string>
     <string name="store">Store</string>
     <string name="add_to_cart">Add to Cart</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

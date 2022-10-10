@@ -81,6 +81,7 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
 
-
+    implementation 'com.razorpay:checkout:1.6.25'
+    implementation 'com.github.paymaya:paymaya-android-sdk-v2:v2.1.0'
 
 }

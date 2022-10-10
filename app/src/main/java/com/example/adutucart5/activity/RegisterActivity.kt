@@ -48,6 +48,12 @@ class RegisterActivity : AppCompatActivity() {
             .create()
         builder.show()
 
+        val preferences = this.getSharedPreferences("user", MODE_PRIVATE)
+        val editor = preferences.edit()
+
+        editor.putString("number",binding.userNumber.text.toString())
+        editor.putString("name", binding.userName.text.toString())
+        editor.apply()
 
         val data = UserModel(userName = binding.userName.text.toString(),
                             userPhoneNumber = binding.userNumber.text.toString())
